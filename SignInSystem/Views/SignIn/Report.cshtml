@@ -1,0 +1,15 @@
+﻿@model List<SignInSystem.Models.Attendee>
+
+@{
+    Layout = "~/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    @foreach (var guest in Model)
+    {
+        @guest.FirstName;
+       
+    }
+
+</div>

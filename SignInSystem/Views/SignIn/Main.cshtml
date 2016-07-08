@@ -6,34 +6,34 @@
 
 @using (Html.BeginForm())
 {
+    <div id="info">
+        <div class="input">
+            @Html.LabelFor(m => m.FirstName, "First Name")
+            @Html.TextBoxFor(m => m.FirstName)
+            @Html.ValidationMessageFor(m => m.FirstName)
+        </div>
 
-    <div>
-        @Html.LabelFor(m => m.FirstName)
-        @Html.TextBoxFor(m => m.FirstName)
-        @Html.ValidationMessageFor(m => m.FirstName)
+        <div class="input">
+            @Html.LabelFor(m => m.LastName, "Last Name")
+            @Html.TextBoxFor(m => m.LastName)
+            @Html.ValidationMessageFor(m => m.LastName)
+        </div>
+        <div class="input">
+            @Html.LabelFor(m => m.Email, "Email Address")
+            @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email)
+        </div>
+        <div class="input">
+            @Html.LabelFor(m => m.ConfirmEmail, "Confirm Email Address")
+            @Html.TextBoxFor(m => m.ConfirmEmail)
+            @Html.ValidationMessageFor(m => m.ConfirmEmail)
+        </div>
+        <div class="input">
+            @Html.LabelFor(m => m.PhoneNumber, "Phone Number")
+            @Html.TextBoxFor(m => m.PhoneNumber)
+            @Html.ValidationMessageFor(m => m.PhoneNumber)
+        </div>
     </div>
-
-    <div>
-        @Html.LabelFor(m => m.LastName)
-        @Html.TextBoxFor(m => m.LastName)
-        @Html.ValidationMessageFor(m => m.LastName)
-    </div>
-    <div>
-        @Html.LabelFor(m => m.Email)
-        @Html.TextBoxFor(m=>m.Email)
-        @Html.ValidationMessageFor(m=>m.Email)
-    </div>
-    <div>
-        @Html.LabelFor(m => m.ConfirmEmail)
-        @Html.TextBoxFor(m => m.ConfirmEmail)
-        @Html.ValidationMessageFor(m => m.ConfirmEmail)
-    </div>
-    <div>
-        @Html.LabelFor(m => m.PhoneNumber)
-        @Html.TextBoxFor(m => m.PhoneNumber)
-        @Html.ValidationMessageFor(m => m.PhoneNumber)
-    </div>
-
 
 
 

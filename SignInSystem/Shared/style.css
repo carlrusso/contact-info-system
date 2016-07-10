@@ -1,43 +1,119 @@
-﻿
+﻿body{
+    background-color:lightcyan;
+}
+
+nav{
+    width: 90%;
+    background-color: royalblue;
+    color: white;
+    font-weight:bold;
+    margin-bottom: 5px;
+    padding: 30px;
+    font-size: 1.75em;
+    border-radius:10px;
+    box-shadow: 10px 10px 5px #888888;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+}
+
+
 #main_content{
     display:block;
     width:80%;
     background-color: deepskyblue;
-    border-radius: 5px;
-
-
+    border-radius: 10px;
+    margin:auto;
+    padding: 20px;
+    box-shadow: 10px 10px 5px #888888;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 
 #info{
     display: block;
-    width: 60%;
+    width: 80%;
     margin-left:auto;
     margin-right: 0px;
     
 }
 
+
 .input{
-    margin: 10px auto;
+    margin: 10px;
+    
    
 }
 
 .input input{
-    margin-left: 20px;
+    margin-left: 2px;
 
 }
 .input label{
-    font-size: 1.5em;
-   
+    font-size: 1.2em;
+   text-align:left;
+   width: 200px;
+   display: inline-block;
 }
 
+/*validation error message appears red*/
 .field-validation-error {
     color: red;
     
 }
+
 
 form button{
     padding: 10px;
     background-color: lightgreen;
     font-size:1.5em;
     display:block;
+    margin:auto;
+    width: 100px;
+    height:50px;
+ transition: 0.5s;
 }
+/*button tranistions over specified transition time
+    when hovered over by mouse
+*/
+form button:hover{
+     padding: 10px;
+    background-color: darkblue;
+    color:gold;
+    font-size:1.5em;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+    
+    width:120px;
+}
+
+/*formats report page table nicely*/
+td{
+    padding-right: 10px;
+}
+#return{
+
+    text-align:center;
+    display:block;
+    margin: auto;
+    width:200px;
+    padding: 1px;
+    background-color:gold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px darkblue;
+    
+    
+}
+#return a{
+    
+    text-decoration:none;
+    color: darkblue;
+}
+
+
+#return a:hover{
+    
+    transition:0.5s;
+    color: orangered;
+}
+

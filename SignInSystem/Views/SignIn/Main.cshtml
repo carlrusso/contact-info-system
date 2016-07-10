@@ -7,6 +7,9 @@
 @using (Html.BeginForm())
 {
     <div id="info">
+
+
+
         <div class="input">
             @Html.LabelFor(m => m.FirstName, "First Name")
             @Html.TextBoxFor(m => m.FirstName)
@@ -18,27 +21,28 @@
             @Html.TextBoxFor(m => m.LastName)
             @Html.ValidationMessageFor(m => m.LastName)
         </div>
+
         <div class="input">
             @Html.LabelFor(m => m.Email, "Email Address")
             @Html.TextBoxFor(m => m.Email)
             @Html.ValidationMessageFor(m => m.Email)
         </div>
+
         <div class="input">
             @Html.LabelFor(m => m.ConfirmEmail, "Confirm Email Address")
             @Html.TextBoxFor(m => m.ConfirmEmail)
             @Html.ValidationMessageFor(m => m.ConfirmEmail)
         </div>
+
         <div class="input">
             @Html.LabelFor(m => m.PhoneNumber, "Phone Number")
             @Html.TextBoxFor(m => m.PhoneNumber)
             @Html.ValidationMessageFor(m => m.PhoneNumber)
         </div>
+
     </div>
 
-
-
-
-
+  <br />
 
     <button>Sign In</button>
 }

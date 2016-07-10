@@ -1,4 +1,6 @@
 # contact-info-system
 Simple web app to collect contact information (e.g. sign up for mailing list or sign-in at an event).
-Currently reads/writes from csv file but with dependency injection built in I can later modify
-the DAL to work with a database.
+Currently reads/writes to a file but could later be modified to use a database.
+Dependency injection built-in to allow testing.
+Validation of user input for required fields and valid format.
+

@@ -9,13 +9,16 @@ namespace SignInSystem.DataAccess
 {
     public class AttendeeFileDAL : IAttendeeInfoDAL
     {
+        //constant for file name
         private const string attendeeInfoFile = "attendeeList.csv";
 
+        //constants for columns in csv file 
         private const int Col_FirstName = 0;
         private const int Col_LastName = 1;
         private const int Col_Email = 2;
         private const int Col_Phone = 3;
 
+        //saves attendee information to file
         public void SaveInfo(Attendee guest)
         {
             string currentDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data");
@@ -37,6 +40,7 @@ namespace SignInSystem.DataAccess
 
         }
 
+        //returns a list of all attendee info
         public List<Attendee> GetAllInfo()
         {
             List<Attendee> allAttendees = new List<Attendee>();

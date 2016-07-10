@@ -5,11 +5,17 @@
 }
 
 
-<div>
+<table>
     @foreach (var guest in Model)
     {
-        @guest.FirstName;
-       
+        <tr>
+            <td> @guest.FirstName</td>
+            <td>@guest.LastName</td>
+            <td>@guest.Email</td>
+            <td>@guest.PhoneNumber</td>
+        </tr>
     }
 
-</div>
+</table>
+<br />
+@Html.ActionLink("Return to Main Page", "Main", "SignIn")

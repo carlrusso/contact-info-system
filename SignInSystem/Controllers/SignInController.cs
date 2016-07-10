@@ -10,8 +10,17 @@ namespace SignInSystem.Controllers
 {
     public class SignInController : Controller
     {
-        private IAttendeeInfoDAL attendeeFileDAL = new AttendeeFileDAL();
-        private const string SessionKey = "current_sign_in";
+
+
+        private IAttendeeInfoDAL attendeeFileDAL;
+        public SignInController(IAttendeeInfoDAL attendeeFileDAL)
+        {
+
+            this.attendeeFileDAL = attendeeFileDAL;
+        }
+
+
+
         // GET: SignIn
         public ActionResult Main()
         {
@@ -33,12 +42,13 @@ namespace SignInSystem.Controllers
             return RedirectToAction("Confirmation", "SignIn");
         }
 
+        
         public ActionResult Confirmation()
         {
-           
 
-           
+        
             return View("Confirmation");
+            
         }
 
         public ActionResult Report()

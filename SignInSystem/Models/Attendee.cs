@@ -18,7 +18,7 @@ namespace SignInSystem.Models
         [DataType(DataType.EmailAddress, ErrorMessage ="Invalid Email Address")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage ="Confirm Password")]
+        [Required(ErrorMessage ="Confirm Email")]
         [Compare("Email", ErrorMessage ="Email address does not match")]
         public string ConfirmEmail { get; set; }
 
